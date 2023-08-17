@@ -129,15 +129,12 @@ const Show = () => {
       </div>
 
       {dataLoad === true
-        ? "Loading"
+        ?  <p style={{ color: "white" }}>Loading . . .</p>
         : message.map((m) => (
             <div key={m._id} className="allTask">
               {/* {m.user === undefined && <p style={{color:"white"}}>Your task collections are empty . . .</p> } */}
               {auth.user !== null && m.user === auth.user._id  ? (<div>
-                <h2 style={{ textAlign: "center", color: "white " }}>
-                  {" "}
-                  All tasks
-                </h2>
+                
                 <p>Created by : {auth.user.name} </p>
                 <p>Title : {m.title} </p>
                 <p>task : {m.task} </p>
