@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useAuth } from "../../context/auth";
-import { set } from "mongoose";
+
 
 const Show = () => {
   const [auth] = useAuth();

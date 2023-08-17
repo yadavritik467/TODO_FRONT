@@ -195,5 +195,22 @@ button:active{
 }
 
 
+@media screen and (max-width: 500px) {
+  .create_task_parent{
+  
+  width: 300px;
+
+}
+.create_task{
+  width: 300px;
+}
+.allTask{
+  width: 300px;
+}
+
+.form{
+  width: 300px;
+}
+}
 
 
